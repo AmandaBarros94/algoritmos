@@ -14,6 +14,7 @@ def parcelling(lyrics, start, end):
 
     return maker + 1
 
+
 def ordain(lyrics, start, end):
     if start < end:
         p = parcelling(lyrics, start, end)
@@ -22,8 +23,8 @@ def ordain(lyrics, start, end):
 
     return lyrics
 
-def is_anagram(first, second):
-    
+
+def is_anagram(first, second):    
     if (first or second) != "":
         list_1, list_2 = list(first.lower()), list(
             second.lower()
@@ -34,5 +35,4 @@ def is_anagram(first, second):
         string_1, string_2 = "".join(sort_1), "".join(sort_2)
 
         return (string_1, string_2, string_1 == string_2)
-
     return (first, second, False)

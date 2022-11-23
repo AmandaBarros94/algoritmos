@@ -7,5 +7,4 @@ def study_schedule(permanence_period, target_time):
                 students += 1
         except TypeError:
             return None
-
     return students
